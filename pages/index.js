@@ -38,7 +38,7 @@ const Home = () => {
         <Layout>
             <Configure hitsPerPage={20} />
             <div className="row pt-3">
-                <div className="col-md-2 col-xs-12">
+                <div className="col-md-2 col-xs-12 d-none d-sm-block">
                     <h4 className="pt-3" style={{fontWeight:'bold'}}>Make</h4>
                     <RefinementList attribute="make" />
                     <h4 className="pt-3"  style={{fontWeight:'bold'}}>Model</h4>
@@ -48,7 +48,7 @@ const Home = () => {
                     <h4 className="pt-3"  style={{fontWeight:'bold'}}>Color</h4>
                     <RefinementList attribute="ext_color" />
                 </div>
-                <div className="col-md-10 col-xs-12 pb-5">
+                <div className="col-md-10 col-xs-12 pb-5 justify-content-center">
                     <SearchBox />
                     <CustomHits/>
                     {/*<Pagination />*/}

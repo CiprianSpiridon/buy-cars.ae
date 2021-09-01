@@ -1,3 +1,16 @@
-.ais-Hits-list {
-  list-style: none !important;
+.car-item {
+  max-width:360px;
+}
+
+.car-img {
+  width:360px;
+}
+
+@media (max-width: 575.98px) {
+  .car-item {
+    max-width:450px;
+  }
+  .car-img {
+    width:450px;
+  }
 }
