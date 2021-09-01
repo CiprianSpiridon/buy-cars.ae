@@ -36,7 +36,9 @@ const Home = () => {
                     <RefinementList attribute="year"/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Color</h5>
                     <RefinementList attribute="ext_color"/>
-                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>MILEA</h5>
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>City</h5>
+                    <RefinementList attribute="city"/>
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
                     <RangeInputWidget attribute="mileage"/>
                 </div>
                 <div className="col-md-10 col-xs-12 pb-5 justify-content-center">
