@@ -18,7 +18,6 @@ import {
 
 import '../styles/Home.module.css'
 import CardGrid from "../src/components/CardGrid";
-import CheckboxFilterList from "../src/components/CheckboxFilterList";
 
 const searchClient = algoliasearch(
     "7QCHFZ2CJG",

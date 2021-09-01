@@ -24,8 +24,8 @@ const CardGrid = ({
                     null
             }
             <div className="row pt-5">
-                {hits.map(hit => (
-                    <CarCard hit={hit}/>
+                {hits.map((hit,key )=> (
+                    <CarCard key={key} hit={hit}/>
                 ))}
             </div>
 
