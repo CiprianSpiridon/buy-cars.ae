@@ -10,7 +10,7 @@ const CarCard = ({hit}) => {
             }}
         >
 
-            <div className="card-body m-0 p-0">
+                <div className="card-body m-0 p-0 ">
                 <div
                     style={{
                         height:'270px'
