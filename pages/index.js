@@ -29,17 +29,17 @@ const Home = () => {
                 <div className="col-md-2 col-xs-12 d-none d-sm-block">
                     <ClearRefinements clearsQuery/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Make</h5>
-                    <RefinementList attribute="make"/>
+                    <RefinementList attribute="make" limit={1000}/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Model</h5>
-                    <RefinementList attribute="model"/>
+                    <RefinementList attribute="model"  limit={1000}/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Year</h5>
-                    <RefinementList attribute="year"/>
+                    <RefinementList attribute="year" limit={1000}/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Color</h5>
-                    <RefinementList attribute="ext_color"/>
+                    <RefinementList attribute="ext_color" limit={1000}/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>City</h5>
-                    <RefinementList attribute="city"/>
+                    <RefinementList attribute="city" limit={1000}/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
-                    <RangeInputWidget attribute="mileage"/>
+                    <RangeInputWidget attribute="mileage" limit={1000}/>
                 </div>
                 <div className="col-md-10 col-xs-12 pb-5 justify-content-center">
 
