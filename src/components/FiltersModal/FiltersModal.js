@@ -45,7 +45,7 @@ const FiltersModal = ({displayModal ,children}) => {
                         <button
                             type="button"
                             className="btn btn-primary"
-                            onClick={() => setShown(false)}
+                            onClick={() => displayModal(false)}
                         >Show results
                         </button>
                     </div>
