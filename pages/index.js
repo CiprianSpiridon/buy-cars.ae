@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Layout from "../src/components/Layout";
 import algoliasearch from "algoliasearch/lite";
 import {withInstantSearch} from "next-instantsearch";
@@ -7,12 +7,16 @@ import {
     RefinementList,
     SearchBox,
     connectInfiniteHits,
-    ClearRefinements, Stats, ScrollTo
+    ClearRefinements,
+    Stats,
+    ScrollTo,
+    connectCurrentRefinements
 } from "react-instantsearch-dom";
 
 import '../styles/Home.module.css'
 import CardGrid from "../src/components/CardGrid";
 import RangeInputWidget from "react-instantsearch-dom/dist/cjs/widgets/RangeInput";
+import FiltersModal from "../src/components/FiltersModal";
 
 const searchClient = algoliasearch(
     "7QCHFZ2CJG",
@@ -21,6 +25,7 @@ const searchClient = algoliasearch(
 const CustomHits = connectInfiniteHits(CardGrid);
 
 const Home = () => {
+    const [showFilters, setShowFilters] = useState(false);
 
     return (
         <Layout>
@@ -64,13 +69,76 @@ const Home = () => {
                 <div className="col-md-10 col-xs-12 pb-5 justify-content-center">
 
                     <SearchBox/>
+
                     <Stats/>
                     <ScrollTo scrollOn="query">
                         <CustomHits/>
                     </ScrollTo>
                 </div>
-            </div>
+                <div
+                    className="row align-items-center justify-content-center"
+                    style={{
+                        position: "fixed",
+                        bottom: '20px'
+                    }}
+                >
+                    <button
+                        type="button"
+                        className="btn btn-outline-primary"
+                        style={{
+                            width: '200px',
+                            backgroundColor: 'white'
+                        }}
 
+                        onClick={() => {
+                            setShowFilters(true);
+                            console.log('toggle show filters', showFilters);
+                        }}
+                    >
+                        FILTERS
+                    </button>
+                </div>
+            </div>
+            {
+                showFilters &&
+                <FiltersModal
+                    displayModal={setShowFilters}
+                >
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Make</h5>
+                    <RefinementList
+                        attribute="make"
+                        showMore
+                        showMoreLimit={1000}
+                    />
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Model</h5>
+                    <RefinementList
+                        attribute="model"
+                        showMore
+                        showMoreLimit={1000}
+                    />
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Year</h5>
+                    <RefinementList
+                        attribute="year"
+                        showMore
+                        showMoreLimit={1000}
+                    />
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Color</h5>
+                    <RefinementList
+                        attribute="ext_color"
+                        showMore
+                        showMoreLimit={1000}
+                    />
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>City</h5>
+                    <RefinementList
+                        attribute="city"
+                        showMore
+                        showMoreLimit={1000}
+                    />
+                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
+                    <RangeInputWidget attribute="mileage"/>
+                </FiltersModal>
+            }
+            <p className="mt-5"></p>
 
         </Layout>
     )
