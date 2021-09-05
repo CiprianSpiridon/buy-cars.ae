@@ -34,7 +34,7 @@ const CardGrid = ({
             {
                 hasMore ?
                     <div className="container-fluid">
-                        <div className="row align-items-center justify-content-center">
+                        <div className="row align-items-center justify-content-center mt-5">
                             <button
                                 className="btn btn-outline-primary col-lg-2 col-sm-12 ml-2"
                                 disabled={!hasMore}

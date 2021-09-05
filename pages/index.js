@@ -75,71 +75,75 @@ const Home = () => {
                         <CustomHits/>
                     </ScrollTo>
                 </div>
+
                 <div
-                    className="row align-items-center justify-content-center"
+                    className="row align-items-center justify-content-center d-sm-none"
                     style={{
                         position: "fixed",
                         bottom: '20px'
                     }}
                 >
-                    <button
-                        type="button"
-                        className="btn btn-outline-primary"
-                        style={{
-                            width: '200px',
-                            backgroundColor: 'white'
-                        }}
+                        <button
+                            type="button"
+                            className="btn btn-outline-primary"
+                            style={{
+                                width: '200px',
+                                backgroundColor: 'white'
+                            }}
 
-                        onClick={() => {
-                            setShowFilters(true);
-                            console.log('toggle show filters', showFilters);
-                        }}
-                    >
-                        FILTERS
-                    </button>
+                            onClick={() => {
+                                setShowFilters(true);
+                                console.log('toggle show filters', showFilters);
+                            }}
+                        >
+                            FILTERS
+                        </button>
                 </div>
             </div>
-            <div
-                style={{
-                    display:showFilters === true ? 'block':'none'
-                }}
-            >
-                <FiltersModal
-                    displayModal={setShowFilters}
+            <div className="d-none d-sm-block">
+
+                <div
+                    style={{
+                        display: (showFilters === true ? 'block' : 'none')
+                    }}
                 >
-                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Make</h5>
-                    <RefinementList
-                        attribute="make"
-                        showMore
-                        showMoreLimit={1000}
-                    />
-                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Model</h5>
-                    <RefinementList
-                        attribute="model"
-                        showMore
-                        showMoreLimit={1000}
-                    />
-                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Year</h5>
-                    <RefinementList
-                        attribute="year"
-                        showMore
-                        showMoreLimit={1000}
-                    />
-                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Color</h5>
-                    <RefinementList
-                        attribute="ext_color"
-                        showMore
-                        showMoreLimit={1000}
-                    />
-                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>City</h5>
-                    <RefinementList
-                        attribute="city"
-                        showMore
-                        showMoreLimit={1000}
-                    />
-                    <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
-                    <RangeInputWidget attribute="mileage"/>
-                </FiltersModal>
+                    <FiltersModal
+                        displayModal={setShowFilters}
+                    >
+                        <h5 className="pt-3" style={{fontWeight: 'bold'}}>Make</h5>
+                        <RefinementList
+                            attribute="make"
+                            showMore
+                            showMoreLimit={1000}
+                        />
+                        <h5 className="pt-3" style={{fontWeight: 'bold'}}>Model</h5>
+                        <RefinementList
+                            attribute="model"
+                            showMore
+                            showMoreLimit={1000}
+                        />
+                        <h5 className="pt-3" style={{fontWeight: 'bold'}}>Year</h5>
+                        <RefinementList
+                            attribute="year"
+                            showMore
+                            showMoreLimit={1000}
+                        />
+                        <h5 className="pt-3" style={{fontWeight: 'bold'}}>Color</h5>
+                        <RefinementList
+                            attribute="ext_color"
+                            showMore
+                            showMoreLimit={1000}
+                        />
+                        <h5 className="pt-3" style={{fontWeight: 'bold'}}>City</h5>
+                        <RefinementList
+                            attribute="city"
+                            showMore
+                            showMoreLimit={1000}
+                        />
+                        <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
+                        <RangeInputWidget attribute="mileage"/>
+                    </FiltersModal>
+                </div>
             </div>
             <p className="mt-5"></p>
 
