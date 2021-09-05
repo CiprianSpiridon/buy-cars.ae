@@ -8,7 +8,7 @@ const CarCard = ({hit}) => {
 
     return (
         <div
-            className="card m-2 mb-4 p-0 border-0 bg-white shadow-sm"
+            className="card ml-5 my-lg-0 m-2 mb-4 p-0 border-0 bg-white shadow-sm"
             style={{
                 maxWidth: '360px'
             }}

@@ -48,6 +48,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/components/CardGrid/CardGrid.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/FiltersModal/FiltersModal.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/FiltersModal/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
