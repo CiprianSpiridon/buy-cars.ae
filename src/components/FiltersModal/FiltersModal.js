@@ -31,13 +31,17 @@ const FiltersModal = ({displayModal ,children}) => {
                     <div
                         className="modal-body"
                         style={{
-                            height:'84vh',
+                            height:'80vh',
                             overflow:'scroll'
                         }}
                     >
                         {children}
                     </div>
-                    <div className="modal-footer justify-content-center">
+                    <div className="modal-footer justify-content-center"
+                         style={{
+                             marginBottom:'200px'
+                         }}
+                    >
                         <button
                             type="button"
                             className="btn btn-primary"

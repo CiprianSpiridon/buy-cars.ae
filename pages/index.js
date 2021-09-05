@@ -99,8 +99,11 @@ const Home = () => {
                     </button>
                 </div>
             </div>
-            {
-                showFilters &&
+            <div
+                style={{
+                    display:showFilters === true ? 'block':'none'
+                }}
+            >
                 <FiltersModal
                     displayModal={setShowFilters}
                 >
@@ -137,7 +140,7 @@ const Home = () => {
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
                     <RangeInputWidget attribute="mileage"/>
                 </FiltersModal>
-            }
+            </div>
             <p className="mt-5"></p>
 
         </Layout>
