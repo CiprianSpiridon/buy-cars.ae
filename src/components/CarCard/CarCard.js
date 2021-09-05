@@ -2,6 +2,10 @@ import Image from 'next/image';
 
 
 const CarCard = ({hit}) => {
+    const addDefaultImage = (ev) => {
+        ev.target.src='/buy-cars-no-photo-available.jpg'
+    }
+
     return (
         <div
             className="card m-2 mb-4 p-0 border-0 bg-white shadow-sm"
@@ -20,6 +24,7 @@ const CarCard = ({hit}) => {
                         width={360}
                         src={hit.images[0]}
                         className="rounded-top rounded-3"
+                        onError={addDefaultImage}
                     />
                 </div>
                 <div className="p-2 pt-0">
