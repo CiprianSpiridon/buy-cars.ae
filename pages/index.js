@@ -29,15 +29,35 @@ const Home = () => {
                 <div className="col-md-2 col-xs-12 d-none d-sm-block">
                     <ClearRefinements clearsQuery/>
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Make</h5>
-                    <RefinementList attribute="make"/>
+                    <RefinementList
+                        attribute="make"
+                        showMore
+                        showMoreLimit={1000}
+                    />
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Model</h5>
-                    <RefinementList attribute="model"/>
+                    <RefinementList
+                        attribute="model"
+                        showMore
+                        showMoreLimit={1000}
+                    />
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Year</h5>
-                    <RefinementList attribute="year"/>
+                    <RefinementList
+                        attribute="year"
+                        showMore
+                        showMoreLimit={1000}
+                    />
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Color</h5>
-                    <RefinementList attribute="ext_color"/>
+                    <RefinementList
+                        attribute="ext_color"
+                        showMore
+                        showMoreLimit={1000}
+                    />
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>City</h5>
-                    <RefinementList attribute="city"/>
+                    <RefinementList
+                        attribute="city"
+                        showMore
+                        showMoreLimit={1000}
+                    />
                     <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
                     <RangeInputWidget attribute="mileage"/>
                 </div>
@@ -45,7 +65,7 @@ const Home = () => {
 
                     <SearchBox/>
                     <Stats/>
-                    <ScrollTo scrollOn="query" >
+                    <ScrollTo scrollOn="query">
                         <CustomHits/>
                     </ScrollTo>
                 </div>
