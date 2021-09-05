@@ -31,7 +31,7 @@ const FiltersModal = ({displayModal ,children}) => {
                     <div
                         className="modal-body"
                         style={{
-                            height:'80vh',
+                            height:'70vh',
                             overflow:'scroll'
                         }}
                     >
