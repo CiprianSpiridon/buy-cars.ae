@@ -110,6 +110,7 @@ const Home = () => {
                     <FiltersModal
                         displayModal={setShowFilters}
                     >
+                        <ClearRefinements clearsQuery/>
                         <h5 className="pt-3" style={{fontWeight: 'bold'}}>Make</h5>
                         <RefinementList
                             attribute="make"
