@@ -100,7 +100,7 @@ const Home = () => {
                         </button>
                 </div>
             </div>
-            <div className="d-none d-sm-block">
+            <div className="d-block d-sm-none">
 
                 <div
                     style={{
