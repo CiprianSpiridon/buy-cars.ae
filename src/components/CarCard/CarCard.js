@@ -18,13 +18,15 @@ const CarCard = ({hit}) => {
                 <div
                     style={{
                         height:'270px',
-                        overflow:'hidden'
+                        overflow:'hidden',
+                        display:'flex',
+                        alignItems:'center'
                     }}
                 >
                     <img
                         width={360}
                         src={hit.images[0]}
-                        className="rounded-top rounded-3"
+                        className="rounded-top rounded-3 "
                         onError={addDefaultImage}
                     />
                 </div>
