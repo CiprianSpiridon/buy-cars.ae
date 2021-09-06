@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 
 const CarCard = ({hit}) => {
     const addDefaultImage = (ev) => {
-        ev.target.src='/buy-cars-no-photo-available.jpg'
+        ev.target.src = '/buy-cars-no-photo-available.jpg'
     }
 
     return (
@@ -13,51 +14,60 @@ const CarCard = ({hit}) => {
                 maxWidth: '360px'
             }}
         >
-
-                <div className="card-body m-0 p-0 ">
-                <div
+            <Link href={hit.source_link}>
+                <a
+                    target="_blank"
                     style={{
-                        height:'270px',
-                        overflow:'hidden',
-                        display:'flex',
-                        alignItems:'center'
+                        textDecoration:"none"
                     }}
+                    rel="nofollow"
                 >
-                    <img
-                        width={360}
-                        src={hit.images[0]}
-                        className="rounded-top rounded-3 "
-                        onError={addDefaultImage}
-                    />
-                </div>
-                <div className="p-2 pt-0">
-                    <div className="row">
-                        <h4 className="card-title">
-                            {hit.year} {hit.make} {hit.model}
-                        </h4>
+                    <div className="card-body m-0 p-0 ">
+                        <div
+                            style={{
+                                height: '270px',
+                                overflow: 'hidden',
+                                display: 'flex',
+                                alignItems: 'center'
+                            }}
+                        >
+                            <img
+                                width={360}
+                                src={hit.images[0]}
+                                className="rounded-top rounded-3 "
+                                onError={addDefaultImage}
+                            />
+                        </div>
+                        <div className="p-2 pt-0">
+                            <div className="row">
+                                <h4 className="card-title">
+                                    {hit.year} {hit.make} {hit.model}
+                                </h4>
 
-                    </div>
-                    <div className="row">
-                        <div className="col-7">
-                            <p
-                                className="card-title"
-                                style={{
-                                    textAlign: 'left'
-                                }}>
-                                {hit.mileage} km
-                            </p>
+                            </div>
+                            <div className="row">
+                                <div className="col-7">
+                                    <p
+                                        className="card-title"
+                                        style={{
+                                            textAlign: 'left'
+                                        }}>
+                                        {hit.mileage} km
+                                    </p>
+                                </div>
+                                <div className="col-5">
+                                    <p
+                                        style={{
+                                            textAlign: 'right'
+                                        }}>
+                                        {hit.currency} {hit.price}
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-5">
-                            <p
-                                style={{
-                                    textAlign: 'right'
-                                }}>
-                                {hit.currency} {hit.price}
-                            </p>
-                        </div>
                     </div>
-                </div>
-            </div>
+                </a>
+            </Link>
         </div>
     )
 }
