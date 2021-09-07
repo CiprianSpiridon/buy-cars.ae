@@ -48,12 +48,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/YallaMotorsCrawlCar.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/YallaMotorsCrawlCarQueue.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Kernel.php">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Jobs/CrawlAutotrader.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Jobs/CrawlYallaMotorsCar.php">
           <value>
             <set />
           </value>
