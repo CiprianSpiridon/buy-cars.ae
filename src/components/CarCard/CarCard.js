@@ -31,9 +31,10 @@ const CarCard = ({hit}) => {
                                 alignItems: 'center'
                             }}
                         >
+
                             <img
                                 width={360}
-                                src={hit.images[0]}
+                                src={hit.images.length>0?hit.images[0]:'/buy-cars-no-photo-available.jpg'}
                                 className="rounded-top rounded-3 "
                                 onError={addDefaultImage}
                             />
@@ -43,7 +44,6 @@ const CarCard = ({hit}) => {
                                 <h4 className="card-title">
                                     {hit.year} {hit.make} {hit.model}
                                 </h4>
-
                             </div>
                             <div className="row">
                                 <div className="col-7">
