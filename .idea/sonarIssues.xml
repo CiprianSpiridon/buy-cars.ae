@@ -63,6 +63,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Http/Controllers/Admin/CarCrudController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Jobs/CrawlAutotrader.php">
           <value>
             <set />
@@ -74,6 +79,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Jobs/CrawlYallaMotorsUrlList.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Models/Car.php">
           <value>
             <set />
           </value>
@@ -119,6 +129,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/components/FiltersModal/index.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/Layout/Layout.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/components/OgTags/OgTags.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/config/website.js">
           <value>
             <set />
           </value>

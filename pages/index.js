@@ -9,14 +9,21 @@ import {
     connectInfiniteHits,
     ClearRefinements,
     Stats,
-    ScrollTo,
-    connectCurrentRefinements
+    ScrollTo
 } from "react-instantsearch-dom";
 
 import '../styles/Home.module.css'
 import CardGrid from "../src/components/CardGrid";
 import RangeInputWidget from "react-instantsearch-dom/dist/cjs/widgets/RangeInput";
 import FiltersModal from "../src/components/FiltersModal";
+import {WEB_FULL_BASE_URL} from "../src/config/website";
+
+const og_tags = {
+    'title': 'Buy Cars in UAE - Your search engine for used cars in the UAE',
+    'description': 'The UAE\'s number 1 search engine for used cars. Browse though thousands of used cars in the you',
+    'url': WEB_FULL_BASE_URL,
+    'type': 'website'
+};
 
 const searchClient = algoliasearch(
     "7QCHFZ2CJG",
@@ -28,7 +35,7 @@ const Home = () => {
     const [showFilters, setShowFilters] = useState(false);
 
     return (
-        <Layout>
+        <Layout og_tags={og_tags}>
             <Configure hitsPerPage={20}/>
             <div className="row pt-3">
                 <div className="col-md-2 col-xs-12 d-none d-sm-block">
