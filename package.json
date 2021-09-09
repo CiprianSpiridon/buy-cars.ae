@@ -13,6 +13,7 @@
     "instantsearch.css": "^7.4.5",
     "next": "11.1.2",
     "next-instantsearch": "^0.3.15",
+    "nextjs-google-analytics": "^0.1.15",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-instantsearch-dom": "^6.12.1"
