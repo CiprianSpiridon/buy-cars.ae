@@ -2193,6 +2193,11 @@ next@11.1.2:
     "@next/swc-linux-x64-gnu" "11.1.2"
     "@next/swc-win32-x64-msvc" "11.1.2"
 
+nextjs-google-analytics@^0.1.15:
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/nextjs-google-analytics/-/nextjs-google-analytics-0.1.15.tgz#80eea4d6ee249324f6b45868796f3bb1fa043016"
+  integrity sha512-hVgqDwGv/rQQZRIqOMOYyJgBHKEFZSS6txrD7gX3KrpO4r73gaUYKLixpDwzCXa+rpyMwFGCuWVFXTl1oPlwpA==
+
 node-fetch@2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
