@@ -1,15 +1,22 @@
 import Image from 'next/image';
 import Link from "next/link";
-
+import { DateTime } from "luxon";
 
 const CarCard = ({hit}) => {
+
+    const now = DateTime.now();
+    const created_at = DateTime.fromSeconds(hit.created_at);
+
+    const diff = now.diff(created_at);
+    const diffInDays = Math.ceil(diff.as('days'))
+
     const addDefaultImage = (ev) => {
         ev.target.src = '/buy-cars-no-photo-available.jpg'
     }
 
     return (
         <div
-            className="card ml-5 my-lg-0 m-2 mb-4 p-0 border-0 bg-white shadow-sm"
+            className="card ml-5 my-lg-0 m-2 mb-4 p-0 border-0 bg-white shadow-sm mb-lg-4"
             style={{
                 maxWidth: '360px'
             }}
@@ -63,6 +70,9 @@ const CarCard = ({hit}) => {
                                         {hit.currency} {hit.price}
                                     </p>
                                 </div>
+                            </div>
+                            <div className="row">
+                              <span className="px-2 text-muted">{ diffInDays >1 ? diffInDays+' days': diffInDays+' day'} ago</span>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,17 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/crap.js">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$APPLICATION_CONFIG_DIR$/scratches/timestamp.html">
           <value>
             <set />
           </value>
@@ -53,6 +63,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/YallaMotorsCrawlCarAll.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/YallaMotorsCrawlCarQueue.php">
           <value>
             <set />
@@ -64,6 +79,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Http/Controllers/Admin/CarCrudController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Http/Controllers/Admin/MakeCrudController.php">
           <value>
             <set />
           </value>
@@ -88,6 +108,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Models/Make.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Providers/AppServiceProvider.php">
           <value>
             <set />
@@ -104,6 +129,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/routes/web.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/package.json">
           <value>
             <set />
           </value>
@@ -149,6 +179,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/config/website.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../buy-parts/api.buy-parts.ae/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../buy-parts/buy-parts.ae/.gitignore">
           <value>
             <set />
           </value>
