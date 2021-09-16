@@ -23,7 +23,7 @@ const CarDetails = ({slug, car}) => {
                     onClick={() => router.back()}
                 >
                         <span className="col-4 py-2">
-                            <ion-icon name="arrow-back-outline" size="small"></ion-icon>
+                             {/*<i className="icon icon-small-left bg-white circle-40 mr-5 font-size-7 text-black font-weight-bold shadow-8"></i>*/}
                         </span>
                     <span
                         className="col-10"
