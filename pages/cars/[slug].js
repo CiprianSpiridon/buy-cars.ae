@@ -64,13 +64,14 @@ const CarDetails = ({slug, car}) => {
                             }}
                         >
                             {
-                                car.images.map(car_image => (
+                                car.images.map((car_image,key) => (
                                     <div
                                         style={{
                                             height: '125px',
                                             width: '165px'
                                         }}
                                         onClick={() => setSelectedImage(car_image)}
+                                        key={key}
                                     >
                                         <img
                                             src={car_image}
