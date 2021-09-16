@@ -3,6 +3,7 @@ import ApiCarBySlug from "../../src/api/ApiCarBySlug";
 import {useState} from "react";
 import {useRouter} from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const CarDetails = ({slug, car}) => {
@@ -23,7 +24,7 @@ const CarDetails = ({slug, car}) => {
                     onClick={() => router.back()}
                 >
                         <span className="col-4 py-2">
-                            <img style={{height: '23px', width: '23px'}} src="/icons8-back-50.png"/>
+                            <Image height="22px" width="22px" src="/icons8-back-50.png"/>
                         </span>
                     <span
                         className="col-10"
@@ -131,22 +132,41 @@ const CarDetails = ({slug, car}) => {
                         }
                         {
                             car.features && car.features.length > 0 && car.features.map((feature, index) => (
-                                <div key={index} className="col-12 col-xl-4" style={{display:'flex'}}>
-                                    <img style={{height: '23px', width: '23px'}} src="/icons8-tick-box-24.png" />
+                                <div key={index} className="col-12 col-xl-4" style={{display: 'flex'}}>
+                                    <Image height="23px" width="23px" src="/icons8-tick-box-24.png"/>
                                     <div
                                         style={{
-                                            marginLeft:'5px'
+                                            marginLeft: '5px'
                                         }}
                                     >{feature}</div>
                                 </div>
                             ))
                         }
                     </div>
+                    <div
+                        className="row d-none d-sm-block"
+                        style={{
+                            marginTop:'10px'
+                        }}
+                    >
+                        <div className="col-12">
+                            <Link
+                                href={car.source_link}
 
+                            >
+                                <a
+                                    target='_blank'
+                                    className="btn-primary btn "
+                                >
+                                    Contact Seller
+                                </a>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div
-                className="row px-5"
+                className="row px-5 d-block d-sm-none"
                 style={{
                     position: 'fixed',
                     bottom: '20px',
