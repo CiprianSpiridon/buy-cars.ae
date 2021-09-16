@@ -21,13 +21,13 @@ const CarCard = ({hit}) => {
                 maxWidth: '360px'
             }}
         >
-            <Link href={hit.source_link}>
+            <Link href={'/cars/'+hit.slug}>
                 <a
-                    target="_blank"
+                    // target="_blank"
                     style={{
                         textDecoration:"none"
                     }}
-                    rel="nofollow"
+                    // rel="nofollow"
                 >
                     <div className="card-body m-0 p-0 ">
                         <div
