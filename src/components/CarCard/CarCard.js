@@ -8,7 +8,7 @@ const CarCard = ({hit}) => {
     const created_at = DateTime.fromSeconds(hit.created_at);
 
     const diff = now.diff(created_at);
-    const diffInDays = Math.ceil(diff.as('days'))
+    const diffInDays = Math.floor(diff.as('days'))
 
     const addDefaultImage = (ev) => {
         ev.target.src = '/buy-cars-no-photo-available.jpg'
@@ -72,7 +72,7 @@ const CarCard = ({hit}) => {
                                 </div>
                             </div>
                             <div className="row">
-                              <span className="px-2 text-muted">{ diffInDays >1 ? diffInDays+' days': diffInDays+' day'} ago</span>
+                              <span className="px-2 text-muted">{ diffInDays === 0 ? 'Created Today':  diffInDays > 1 ? diffInDays+' days ago': diffInDays+' day ago'} </span>
                             </div>
                         </div>
                     </div>
