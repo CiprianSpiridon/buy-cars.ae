@@ -1,9 +1,12 @@
+import Link from "next/link";
 
 const TopMenu = ({}) => {
     return <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Buy-Cars.ae</a>
+                <Link href={'/'}>
+                    <a className="navbar-brand">Buy-Cars.ae</a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false"
                         aria-label="Toggle navigation">

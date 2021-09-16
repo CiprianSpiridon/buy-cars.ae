@@ -23,6 +23,7 @@ const OgTags = ({
             <meta property="og:image:height" content="630"/>
 
             <link rel="icon" type="image/png" href={WEB_FULL_BASE_URL+'/buy-cars-ae-logo.jpg'}/>
+
         </Helmet>
     </>
 };

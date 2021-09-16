@@ -15,13 +15,15 @@ const Layout = ({og_tags,children}) => {
             <TopMenu />
         </div>
         {/*body*/}
-        <div className="row">
+        <div className="body">
             {children}
         </div>
         {/*footer*/}
-        <div className="row">
+        <div className="footer">
 
         </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </div>
 }
 
