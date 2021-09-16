@@ -23,7 +23,7 @@ const CarDetails = ({slug, car}) => {
                     onClick={() => router.back()}
                 >
                         <span className="col-4 py-2">
-                             {/*<i className="icon icon-small-left bg-white circle-40 mr-5 font-size-7 text-black font-weight-bold shadow-8"></i>*/}
+                            <img style={{height: '23px', width: '23px'}} src="/icons8-back-50.png"/>
                         </span>
                     <span
                         className="col-10"
@@ -64,7 +64,7 @@ const CarDetails = ({slug, car}) => {
                             }}
                         >
                             {
-                                car.images.map((car_image,key) => (
+                                car.images.map((car_image, key) => (
                                     <div
                                         style={{
                                             height: '125px',
@@ -125,6 +125,24 @@ const CarDetails = ({slug, car}) => {
                         <div className="col-6">Specs</div>
                         <div className="col-6">{car.regional_specs}</div>
                     </div>
+                    <div className="row border-bottom py-2">
+                        {
+                            car.features && car.features.length > 0 && <h3 className="border-bottom mt-3">Features:</h3>
+                        }
+                        {
+                            car.features && car.features.length > 0 && car.features.map((feature, index) => (
+                                <div key={index} className="col-12 col-xl-4" style={{display:'flex'}}>
+                                    <img style={{height: '23px', width: '23px'}} src="/icons8-tick-box-24.png" />
+                                    <div
+                                        style={{
+                                            marginLeft:'5px'
+                                        }}
+                                    >{feature}</div>
+                                </div>
+                            ))
+                        }
+                    </div>
+
                 </div>
             </div>
             <div
