@@ -9,6 +9,10 @@ import Image from "next/image";
 const CarDetails = ({slug, car}) => {
     const router = useRouter();
 
+    let features = null;
+
+    features = car.features ? JSON.parse(car.features): null;
+
     const [selectedImage, setSelectedImage] = useState(null);
 
     const addDefaultImage = (ev) => {
@@ -128,10 +132,11 @@ const CarDetails = ({slug, car}) => {
                     </div>
                     <div className="row border-bottom py-2">
                         {
-                            car.features && car.features.length > 0 && <h3 className="border-bottom mt-3">Features:</h3>
+                            features && features.length > 0 && <h3 className="border-bottom mt-3">Features:</h3>
                         }
+
                         {
-                            car.features && car.features.length > 0 && car.features.map((feature, index) => (
+                            features && features.length > 0 && features.map((feature, index) => (
                                 <div key={index} className="col-12 col-xl-4" style={{display: 'flex'}}>
                                     <Image height="23px" width="23px" src="/icons8-tick-box-24.png"/>
                                     <div

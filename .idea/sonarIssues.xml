@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/AutotraderCrawlCarPhone.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/AutotraderCrawlCarQueue.php">
           <value>
             <set />
@@ -64,6 +69,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/YallaMotorsCrawlCarAll.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/app/Console/Commands/YallaMotorsCrawlCarPhone.php">
           <value>
             <set />
           </value>
@@ -118,12 +128,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/composer.json">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/config/horizon.php">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../api.buy-cars.ae/database/migrations/2021_08_31_062026_create_url_to_migrate_table.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../api.buy-cars.ae/resources/views/vendor/backpack/base/inc/sidebar_content.blade.php">
           <value>
             <set />
           </value>
