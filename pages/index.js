@@ -26,8 +26,8 @@ const og_tags = {
 };
 
 const searchClient = algoliasearch(
-    "7QCHFZ2CJG",
-    "653fe8191e38640ca63a56c76990e561"
+    "6UV2AZNA78",
+    "b560773303be19e4030ec91adb97f0d9"
 );
 const CustomHits = connectInfiniteHits(CardGrid);
 
