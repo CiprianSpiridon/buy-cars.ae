@@ -150,6 +150,8 @@ const Home = () => {
                         />
                         <h5 className="pt-3" style={{fontWeight: 'bold'}}>Mileage</h5>
                         <RangeInputWidget attribute="mileage"/>
+                        <h5 className="pt-3" style={{fontWeight: 'bold'}}>Price</h5>
+                        <RangeInputWidget attribute="price"/>
                     </FiltersModal>
                 </div>
             </div>
